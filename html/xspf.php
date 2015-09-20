@@ -19,6 +19,6 @@ $xspf = '<?xml version="1.0" encoding="UTF-8"?>
 </playlist>';
 
 Header('Content-type: text/xspf');
-header('Content-Disposition: attachment; filename="popflix.xspf"');
+header('Content-Disposition: attachment; filename="movie.xspf"');
 echo $xspf;
 ?>
