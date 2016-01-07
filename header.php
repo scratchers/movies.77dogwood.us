@@ -1,6 +1,6 @@
 <?php
-if(!$_SERVER['HTTPS'])
-    header('Location: https://' . $_SERVER['SERVER_NAME']);
+//if(!$_SERVER['HTTPS'])
+    //header('Location: https://' . $_SERVER['SERVER_NAME']);
 if (session_status() == PHP_SESSION_NONE)
     session_start();
 if(!isset($_SESSION['user']))

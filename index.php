@@ -1,7 +1,7 @@
-<?php if(!$_SERVER['HTTPS']) header('Location: https://' . $_SERVER['SERVER_NAME']);
+<?php //if(!$_SERVER['HTTPS']) header('Location: https://' . $_SERVER['SERVER_NAME']);
   require_once("db.php");
-  $sql = "INSERT INTO __Access (IP, IPproxy) VALUES ('" . $_SERVER['REMOTE_ADDR'] . "','" . $_SERVER['HTTP_X_FORWARDED_FOR'] . "')";
-  if(!mysql_query($sql)) die('authentication failure 1');
+  //$sql = "INSERT INTO __Access (IP, IPproxy) VALUES ('" . $_SERVER['REMOTE_ADDR'] . "','" . $_SERVER['HTTP_X_FORWARDED_FOR'] . "')";
+  //if(!mysql_query($sql)) die('authentication failure 1');
 
 if(!((fnmatch("192.168*",$_SERVER["REMOTE_ADDR"])) && 
         ((empty($_SERVER["HTTP_X_FORWARDED_FOR"])) || (fnmatch("192.168*",$_SERVER["HTTP_X_FORWARDED_FOR"]))))){
