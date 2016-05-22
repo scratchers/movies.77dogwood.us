@@ -3,6 +3,7 @@
   //$sql = "INSERT INTO __Access (IP, IPproxy) VALUES ('" . $_SERVER['REMOTE_ADDR'] . "','" . $_SERVER['HTTP_X_FORWARDED_FOR'] . "')";
   //if(!mysql_query($sql)) die('authentication failure 1');
 
+/*
 if(!((fnmatch("192.168*",$_SERVER["REMOTE_ADDR"])) && 
         ((empty($_SERVER["HTTP_X_FORWARDED_FOR"])) || (fnmatch("192.168*",$_SERVER["HTTP_X_FORWARDED_FOR"]))))){
   $sql = "SELECT IP FROM __AccessList WHERE (IP='" . $_SERVER['HTTP_X_FORWARDED_FOR'] . "') AND flag = 'ok'";
@@ -19,6 +20,7 @@ if(!((fnmatch("192.168*",$_SERVER["REMOTE_ADDR"])) &&
 	mail("jeffpuckett2@gmail.com", "new visitor" . date("Y-m-d H:i:s"), $msg, $headers);
   }
 }
+*/
 
 session_start();
 if(isset($_GET['logout'])){
