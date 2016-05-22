@@ -4,3 +4,4 @@
 - Source Multiple Directories
 - Summarize New Files
 - MySQLi
+- JSONP for news.php
